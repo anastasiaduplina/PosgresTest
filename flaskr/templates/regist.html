@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>registration</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+</head>
+<form  method="post">
+  <section class="section">
+    <div class="container">
+      <div class="title">Registration</div>
+      <h1 class="subtitle">{{error}}</h1>
+      <label class="checkbox">
+        <input type="checkbox" name="check">
+        Login as a project
+      </label>
+      <div class="container">
+        <input class="input" type=text placeholder="login" name="username">
+        <input class="input" type="password" placeholder="password"name="password">
+      </div>
+      <input class=""button type=submit value=login>
+<p><a class="button " style="background-color:#faf5cd" href="{{ url_for('.loginn') }}">Login</a></p>
+</div></section></form>
