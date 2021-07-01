@@ -19,14 +19,14 @@ def test_login():
 
     #assert b'Hello' in response.get_data()
 
-# def test_registration():
-#     client=app.test_client()
-#     response=client.post('/register',data=dict(
-#         check='',
-#         username='hgjfjyn',
-#         password='123'
-#     ), follow_redirects=True)
-#     assert b'Hello' in response.get_data()
+def test_registration():
+    client = app.test_client()
+    response = client.post('/register', data=dict(
+        check='',
+        username='hgjfjhghghghgjgyn',
+        password='123'
+    ), follow_redirects=True)
+    assert b'Hello' in response.get_data()
 def transaction():
     client = app.test_client()
     # i = 1
@@ -37,7 +37,7 @@ def transaction():
         comment='comment'
         ), follow_redirects=True)
         # i += 1
-    #assert b'Hello,' in response.get_data()
+    assert b'Hello,' in response.get_data()
 # def test_logout():
 #     client = app.test_client()
 #     client.post('/login', data=dict(
